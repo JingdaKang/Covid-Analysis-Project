@@ -1,0 +1,42 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+# Install couchdb dependencies
+- name: Install dependencies
+  become: yes
+  ansible.builtin.apt:
+    name: ['nodejs', 'npm', 'curl', 'git', 'node-grunt-cli']
+    state: latest
+    install_recommends: no
+    update_cache: yes
+
+# Create Docker containers (stops and removes the current ones if existing):
+- name: Stops and removes the current ones if existing
+  become: yes
+  docker_container:
+    name: couchdb
+    state: absent
+
+- name: Create and start Docker containers for couchdb
+  become: yes
+  docker_container:
+    name: couchdb
+    image: "ibmcom/couchdb3:{{ VERSION }}"
+    state: started
+    recreate: yes
+    restart: yes
+    ports:
+      - "5984:5984"
+      - "4369:4369"
+      - "9100-9200:9100-9200"
+    pull: yes
+    env:
+      COUCHDB_USER: "{{user}}"
+      COUCHDB_PASSWORD: "{{pass}}"
+      COUCHDB_SECRET: "{{cookie}}"
+      ERL_FLAGS: "-setcookie \"{{cookie}}\" -name \"couchdb@{{inventory_hostname}}\""

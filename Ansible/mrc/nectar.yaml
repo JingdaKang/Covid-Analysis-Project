@@ -1,0 +1,55 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+- hosts: localhost
+  vars_files:
+    - host_vars/nectar.yaml
+  gather_facts: true
+
+  roles:
+    - role: openstack-common
+    - role: openstack-volume
+    - role: openstack-security-group
+    - role: openstack-instance
+   
+
+- hosts: dbserver
+  vars_files:
+    - host_vars/couchdb_info.yaml
+  gather_facts: true
+
+  roles:
+    - role: openstack-common
+    - role: docker-setup
+    - role: couchdb-setup
+
+
+- hosts: dbcluster_othernodes
+  vars_files:
+    - host_vars/couchdb_info.yaml
+  gather_facts: true
+
+  roles:
+    - role: dbcluster-setup
+
+
+# load couchdb views
+- hosts: dbcluster_masternode
+  vars_files:
+    - host_vars/couchdb_info.yaml
+  gather_facts: true
+
+  roles:
+    - role: backend-setup
+
+
+- hosts: webserver
+  gather_facts: true
+
+  roles:
+    - role: frontend-setup

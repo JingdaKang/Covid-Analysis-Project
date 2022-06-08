@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>vac_page.html</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="style.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+		<style>
+			body {
+				font-family: 'Montserrat', sans-serif;
+				background: #eeeeee;
+				margin: 0;
+			}
+
+			.header {
+				font-family: 'Arvo', serif;
+				font-size: 30px;
+				color: white;
+				text-shadow: 0 0 5px black;
+				text-align: center;
+				padding: 6em 0;
+				background: linear-gradient(to bottom, rgba(173, 165, 168, 0.85) 0%, rgba(120, 116, 115, 0.5) 100%),
+					url("https://ichef.bbci.co.uk/news/976/cpsprodpb/B4C7/production/_114497264_5ba8843c-20bb-4e26-98ce-9d685012d9a6.jpg");
+				background-size: cover;
+			}
+
+			.content {
+				max-width: 63em;
+				margin: auto;
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+
+			#map {
+				width: 1000px;
+				height: 500px;
+			}
+
+			.map-overlay {
+				position: absolute;
+				z-index: 100;
+				background: rgba(255, 255, 255, 0.8);
+				font-family: Arial, sans-serif;
+				overflow: auto;
+				border-radius: 3px;
+			}
+
+			#legend {
+				top: 138%;
+				left: 11.4%;
+				padding: 10px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+				line-height: 18px;
+				margin-bottom: 10px;
+				width: 180px;
+			}
+
+			.legend-key {
+				display: inline-block;
+				border-radius: 20%;
+				width: 10px;
+				height: 10px;
+				margin-right: 5px;
+			}
+
+			#title {
+				top: 0;
+				left: 2%;
+				height: auto;
+				margin-top: 47%;
+				width: 250px;
+				background-color: ##858a8c;
+			}
+
+			h2 {
+				margin: 10px;
+				font-size: 1.2em;
+				text-align: left;
+			}
+
+			#title p {
+				margin: 10px;
+				font-size: 1em;
+				text-align: left;
+			}
+
+			.mapboxgl-popup {
+				max-width: 400px;
+			}
+
+			.mapboxgl-popup-content {
+				text-align: left;
+				font-family: 'Arial', sans-serif;
+			}
+
+			.popup-address {
+				color: #115999;
+				font-weight: bold;
+			}
+
+			.mapboxgl-ctrl-geocoder {
+				width: 100px !important;
+				position: bottom;
+			}
+
+			#myChart {
+				width: 300px;
+				height: 200px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js">
+		</script>
+		<link rel="stylesheet"
+			href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+			type="text/css">
+		<script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin="*"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.1.1/jquery.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+		<div class="header">
+			<h1>Melbourne Residents' Attitudes towards Covid-19 Vaccines</h1>
+		</div>
+		<div class="content">
+
+			<div id="map"></div>
+			<div id="geocoder" class="geocoder"></div>
+			<div class="map-overlay" id="legend"></div>
+			<div class="map-overlay" id="title">
+
+			<h2>Positive Attitude Density</h2>
+			<div id="info">
+			<p>Move your mouse over a point to view details.</p>
+			</div>
+			</div>
+
+			<p>
+			When most restrictions on Covid-19 are lifted, vaccine, especially people’s attitudes vaccine is still an important topic. The data is taken from Twitter, showing number of positive posts towards vaccine in each statistical area in Greater Melbourne.
+			</p>
+			<br />
+			<h3>Previous VS Current Attitudes Distribution toward Vaccine</h3>
+
+			<div id="main" style="width: 1000px; height:500px;"></div>
+
+			<h3>Scenario 1: Is there a correlation between people’s attitudes towards vaccines and the areal income levels?
+</h3>
+			<div id="barchart" style="width: 1060px;height:400px;"></div>
+			<div id="income" style="width: 1060px;height:400px;"></div>
+			<br />
+			<br />
+			
+			<h3>Scenario 2: Is there a correlation between people’s attitudes towards vaccines and the number of people who received bachelor’s or postgraduate degrees?
+</h3>
+			<div id="chartstack" style="width: 1060px;height:400px;"></div>
+			<div id="education" style="width: 1060px;height:400px;"></div>
+			<br />
+			<br />
+			
+			<h3>Scenario 3: Is there a correlation between people’s attitudes towards vaccines and the number of people who studied in the field of health?
+</h3>
+			<div id="lastc" style="width: 1060px;height:400px;"></div>
+			<div id="field" style="width: 1060px;height:400px;"></div>
+			
+			<script type="text/javascript">
+				//Map related settings
+				mapboxgl.accessToken = 'pk.eyJ1IjoieHpoaHp4eGdkIiwiYSI6ImNrdDN3ZzhtYjBib2kycG8ybjhlbG55eXIifQ.LoV4n6spkDbDZ8wsaKS_Gw';
+				map = new mapboxgl.Map({
+					container: 'map',
+					style: 'mapbox://styles/xzhhzxxgd/cl37i7ebn001214nxzxucr3g2'
+				});
+				
+				
+				
+				map.on('load', e => {
+					let layers = [{
+							"name": "0",
+							"color": "#d5e6f0"
+						},
+						{
+							"name": "1",
+							"color": "#c1dcec"
+						},
+						{
+							"name": "2",
+							"color": "#a5c5d9"
+						},
+						{
+							"name": "3",
+							"color": "#84a7bd"
+						},
+						{
+							"name": "4",
+							"color": "#6f91a6"
+						},
+						{
+							"name": "5",
+							"color": "#57768a"
+						},
+						{
+							"name": "6",
+							"color": "#405e70"
+						},
+						{
+							"name": "7",
+							"color": "#2c4352"
+						},
+					];
+				
+					let legend = document.querySelector('#legend');
+				
+					for (let layer of layers) {
+						let item = document.createElement('div');
+				
+						let key = document.createElement('span');
+						key.classList.add('legend-key');
+						key.style.backgroundColor = layer.color;
+				
+						let value = document.createElement('span');
+						value.innerHTML = layer.name;
+				
+						item.appendChild(key);
+						item.appendChild(value);
+						legend.appendChild(item);
+					}
+				
+				
+					map.on('mousemove', e => {
+						let divdata = map.queryRenderedFeatures(e.point, {
+							layers: ['meldata']
+						});
+				
+						if (divdata.length > 0) {
+							document.querySelector('#info').innerHTML = '<p>' + divdata[0].properties.SA3_NAME16 +
+								'</p><p><em>' + divdata[0].properties.POSITIVE + '</em></p>';
+						} else {
+							document.querySelector('#info').innerHTML =
+								'<p>Move your mouse over a point to view details.</p>';
+						}
+					});
+				
+					// Change the icon to a pointer icon when you mouse over a building
+					map.on('mouseenter', 'meldata', e => {
+						map.getCanvas().style.cursor = 'pointer';
+					});
+				
+					// Change it back to a pan icon when it leaves.
+					map.on('mouseleave', 'meldata', e => {
+						map.getCanvas().style.cursor = '';
+					});
+				
+				
+					map.on('click', 'meldata', e => {
+						console.log(e.features[0].properties);
+						new mapboxgl.Popup()
+							.setLngLat(e.lngLat)
+							.setHTML('<span class="popup-address">' + e.features[0].properties.SA3_NAME16 + '</span><br>' +
+								' Number of Positive: ' + e.features[0].properties.POSITIVE + ' <br>Number of Neutral: ' + e
+								.features[0].properties.NEUTRAL + ' <br>Number of Negative: ' + e.features[
+									0].properties.NEGATIVE
+							)
+							.addTo(map);
+					});
+				});
+				
+				// Add a navigation, scalebar and geocoder control
+				
+				map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+				map.addControl(new mapboxgl.ScaleControl());
+				
+				map.addControl(
+					new MapboxGeocoder({
+						accessToken: mapboxgl.accessToken,
+				
+				
+						// Limit seach results to Australia.
+						countries: 'au',
+				
+						bbox: [113.338953078, -43.6345972634, 153.569469029, -10.6681857235],
+				
+					}));
+				
+				//Pie Chart
+				var chartDom = document.getElementById('main');
+				var myChart = echarts.init(chartDom);
+				
+				//Line Chart
+				var chartbar = document.getElementById('barchart');
+				var newChart = echarts.init(chartbar);
+				var newoption;
+				
+				//income correlation
+				var incomeC = document.getElementById('income');
+				var incomeChart = echarts.init(incomeC);
+				
+				//Stack Chart
+				var ctx = document.getElementById("chartstack");
+				var StackChart = echarts.init(ctx);
+				
+				//education correlation
+				var eduC = document.getElementById('education');
+				var educationChart = echarts.init(eduC);
+				
+				//Bar Chart
+				var ct = document.getElementById("lastc");
+				var lastChart = echarts.init(ct);
+				
+				//field correlation
+				var fieC = document.getElementById('field');
+				var fieldChart = echarts.init(fieC);
+				
+				//Pie Chart catch previous data
+				var json1 = (function() {
+				                var json2 = null;
+				                $.ajax({
+				                    async: false,
+				                    url:  "http://admin:admin@172.26.134.79:5984/vax_geo/_design/sentiment/_view/sentiment_count?reduce=true&group_level=1",
+				                    type: 'get',
+				                    Accept: "application/json",
+				                    dataType: "json",
+				                    headers: {
+				                        Authorization: "Basic "+btoa("admin:admin"),
+				                    },
+				                    success: function (data) {
+				                    console.log("success!!!!!!!");
+				                    
+				                    json2 = data;
+				                    console.log(json2)
+				                    }
+				                });
+				                return json2;
+				            })();
+				 console.log(json1)           
+				            
+				//Pie Chart catch current data
+				var json3 = (function() {
+				                var json4 = null;
+				                $.ajax({
+				                    async: false,
+				                    url:  "http://admin:admin@172.26.134.79:5984/covid_vaccine/_design/sentiment/_view/sentiment_count?reduce=true&group_level=1",
+				                    type: 'get',
+				                    Accept: "application/json",
+				                    dataType: "json",
+				                    headers: {
+				                        Authorization: "Basic "+btoa("admin:admin"),
+				                    },
+				                    success: function (data) {
+				                    console.log("success!!!!!!!");
+				                    
+				                    json4 = data;
+				                    console.log(json4)
+				                    }
+				                });
+				                return json4;
+				            })();
+				            
+				var option = {
+					  legend: {left: 'center', 
+								y: '5%'},
+					  tooltip: {},
+					  dataset: {
+					    source: [
+					      ['Attitude', 'old', 'new'],
+					      ['Positive', json1['rows'][2]['value'], json3['rows'][2]['value']],
+					      ['Neutral', json1['rows'][1]['value'], json3['rows'][1]['value']],
+					      ['Negative',json1['rows'][0]['value'], json3['rows'][0]['value']],
+					    ]
+					  },
+					  series: [
+					    {
+					      type: 'pie',
+					      radius: '50%',
+					      center: ['25%', '50%'],
+					      // No encode specified, by default.
+						  label: {position: 'outside',
+						          fontSize: 12,
+						          formatter: '{d}%'}
+						      },
+					    {
+					      type: 'pie',
+					      radius: '50%',
+					      center: ['75%', '50%'],
+					      encode: {
+					        itemName: 'Attitude',
+					        value: 'new'
+					      },
+						  label: {position: 'outside',
+						          fontSize: 12,
+						          formatter: '{d}%'}
+					    }
+					  ]
+				};
+				myChart.setOption(option)
+				
+
+
+				console.log("hello!!!!!!!!!!")
+				
+				
+				//Income data
+				var newoption = {
+				  title: {
+				      subtext: 'Line Chart of Mean and Median Income in SA3 Areas',
+					  left: '5%',
+					  top: '1%'
+				    },
+				  tooltip: {
+				    trigger: 'axis'
+				  },
+				  legend: {
+					  right: '10%',
+					  top: '3%',
+				    },
+				  grid: {
+					left: '8%',
+					top: '15%'
+				  },
+				  toolbox: {
+				    feature: {
+				      saveAsImage: {}
+				    }
+				  },
+				  xAxis: {
+				    type: 'category',
+				    boundaryGap: false,
+				    data: ['Brunswick - Coburg', 'Darebin - South', 'Essendon', 'Melbourne City', 'Port Phillip', 'Nillumbik - Kinglake', 'Whittlesea - Wallan', 'Keilor', 'Macedon Ranges', 'Stonnington - East', 'Banyule', 'Moreland - North', 'Sunbury', 'Tullamarine - Broadmeadows', 'Knox', 'Manningham - East', 'Maroondah', 'Whitehorse - East', 'Yarra Ranges', 'Cardinia', 'Casey - North', 'Casey - South', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton - Bacchus Marsh', 'Wyndham', 'Frankston', 'Mornington Peninsula', 'Stonnington - West', 'Yarra', 'Boroondara', 'Manningham - West', 'Whitehorse - West', 'Bayside', 'Darebin - North', 'Glen Eira', 'Kingston']
+				  },
+				  yAxis: {
+				    type: 'value'
+				  },
+				  series: [
+				    {
+				      name: 'Median Income',
+				      type: 'line',
+				      data: [54129.0, 59045.0, 58488.0, 45815.0, 62326.0, 55094.0, 48923.0, 54247.0, 54286.0, 62713.0, 54519.0, 49212.0, 53011.0, 45705.0, 49538.0, 52509.0, 50908.0, 48346.0, 49154.0, 49988.0, 48331.0, 49171.0, 42047.0, 44846.0, 44352.0, 57600.0, 52337.0, 51500.0, 50077.0, 50037.0, 45700.0, 65300.0, 63460.0, 58284.0, 44065.0, 44665.0, 61068.0, 47444.0, 55127.0, 54761.0]
+				    },
+				    {
+				      name: 'Mean Income',
+				      type: 'line',
+				      data: [65938.0, 75077.0, 77808.0, 69824.0, 90284.0, 71590.0, 55316.0, 67170.0, 69445.0, 106545.0, 70497.0, 57381.0, 60820.0, 51928.0, 58190.0, 79552.0, 60544.0, 60476.0, 58866.0, 57416.0, 57760.0, 54154.0, 48207.0, 59613.0, 50192.0, 71787.0, 63413.0, 58261.0, 57408.0, 57422.0, 62300.0, 110009.0, 83836.0, 97432.0, 63001.0, 63245.0, 105625.0, 56255.0, 76186.0, 67571.0]
+				    }
+				  ]
+				};
+				
+				newChart.setOption(newoption)
+				
+				//income correlation
+				incomeoption = {
+				  xAxis: {
+					  name:"Mean Income For each Region",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+				  yAxis: {
+					  name:"Number of Postive",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+					tooltip: {formatter: '({b} {c})'},
+					title: {
+					    subtext: 'Scatter Plot of Number of Positive Tweets vs. Mean Income in Each Area',
+						left: '5%',
+						top: '1%'
+					  },
+					  grid: {
+					  		left: '8%',
+					  		top: '15%'
+					  },
+				  series: [
+				    {
+				      symbolSize: 20,
+				      data: [[65938.0, 0],
+						 [75077.0, 0],
+						 [77808.0, 1],
+						 [69824.0, 6],
+						 [90284.0, 3],
+						 [71590.0, 0],
+						 [55316.0, 3],
+						 [67170.0, 0],
+						 [69445.0, 0],
+						 [106545.0, 0],
+						 [70497.0, 3],
+						 [57381.0, 0],
+						 [60820.0, 1],
+						 [51928.0, 0],
+						 [58190.0, 0],
+						 [79552.0, 0],
+						 [60544.0, 0],
+						 [60476.0, 0],
+						 [58866.0, 1],
+						 [57416.0, 0],
+						 [57760.0, 0],
+						 [54154.0, 3],
+						 [48207.0, 1],
+						 [59613.0, 2],
+						 [50192.0, 1],
+						 [71787.0, 0],
+						 [63413.0, 2],
+						 [58261.0, 0],
+						 [57408.0, 2],
+						 [57422.0, 0],
+						 [62300.0, 0],
+						 [110009.0, 1],
+						 [83836.0, 6],
+						 [97432.0, 1],
+						 [63001.0, 1],
+						 [63245.0, 0],
+						 [105625.0, 0],
+						 [56255.0, 0],
+						 [76186.0, 2],
+						 [67571.0, 0]],
+				      type: 'scatter',
+					  itemStyle: {color: '#a83f38'},
+				    }
+				  ]
+				};
+				
+				incomeChart.setOption(incomeoption);
+				
+				
+				
+				//Education data
+				var s2 = {
+				  title: {
+					  subtext: 'Line Chart of Number of People with Bachelor or Postgraduate Degrees in Each Area',
+					  left: '5%',
+					  top: '1%'
+					  },
+				  tooltip: {
+				    trigger: 'axis',
+				    axisPointer: {
+				      type: 'cross',
+				      label: {
+				        backgroundColor: '#6a7985'
+				      }
+				    }
+				  },
+				  legend: {
+				    right: '10%',
+				    top: '3%',
+				  },
+				  toolbox: {
+				    feature: {
+				      saveAsImage: {}
+				    }
+				  },
+				  grid: {
+				    left: '8%',
+				    top: '15%'
+				  },
+				  xAxis: [
+				    {
+				      type: 'category',
+				      boundaryGap: false,
+				      data: ['Brunswick - Coburg', 'Darebin - South', 'Essendon', 'Melbourne City', 'Port Phillip', 'Manningham - West', 'Whitehorse - West', 'Bayside', 'Darebin - North', 'Nillumbik - Kinglake', 'Stonnington - West', 'Yarra', 'Boroondara', 'Whittlesea - Wallan', 'Keilor', 'Macedon Ranges', 'Kingston', 'Stonnington - East', 'Banyule', 'Moreland - North', 'Sunbury', 'Tullamarine - Broadmeadows', 'Knox', 'Manningham - East', 'Maroondah', 'Whitehorse - East', 'Yarra Ranges', 'Cardinia', 'Casey - North', 'Casey - South', 'Glen Eira', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton - Bacchus Marsh', 'Wyndham', 'Frankston', 'Mornington Peninsula']
+				    }
+				  ],
+				  yAxis: [
+				    {
+				      name: 'Number of People',
+					  nameLocation:'middle',
+					  nameGap: 60,
+				      type: 'value'
+				    }
+				  ],
+				  series: [
+				    {
+				      name: 'Bachelor degree and Above',
+				      type: 'line',
+				      stack: 'Total',
+				      areaStyle: {},
+				      emphasis: {
+				        focus: 'series'
+				      },
+				      data: [26901, 16473, 18243, 56789, 34961, 22728, 28497, 27051, 19051, 12131, 24512, 33579, 57925, 26673, 9578, 4038, 21801, 14432, 27658, 13500, 3894, 16841, 25494, 5689, 18696, 14992, 17351, 8618, 16802, 18013, 44106, 25353, 47071, 22353, 15964, 21044, 16403, 37611, 13661, 18498]
+				    },
+				    {
+				      name: 'Other Degrees',
+				      type: 'line',
+				      stack: 'Total',
+				      areaStyle: {},
+				      emphasis: {
+				        focus: 'series'
+				      },
+				      data: [22458, 13470, 18398, 50591, 32407, 23164, 26081, 25166, 27389, 20695, 17784, 24726, 37649, 63556, 17351, 10303, 37219, 9625, 36029, 21496, 13910, 44626, 48900, 7379, 35351, 16040, 53101, 32756, 40309, 52083, 37450, 50815, 44491, 51110, 24490, 22829, 47620, 62748, 49463, 55938]
+				    }
+				  ]
+				};
+				StackChart.setOption(s2)
+				
+				//education correlation
+				eduoption = {
+				  xAxis: {
+					  name:"Proportion of Bachelor Degree and Above for each Region",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+				  yAxis: {
+					  name:"Number of Postive",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+					tooltip: {formatter: '({b} {c})'},
+					title: {
+							subtext: 'Scatter Plot of Number of Positive Tweets vs. Proportion of Bachelor or Postgraduate Degrees in Each Area',
+							left: '5%',
+							top: '1%'
+							  },
+					grid: {
+							left: '8%',
+							top: '15%'
+							  },
+				  series: [
+				    {
+				      symbolSize: 20,
+				      data: [[0.5450069896, 0],
+							 [0.550145276, 0],
+							 [0.4978848831, 1],
+							 [0.5288601229, 6],
+							 [0.5189555872, 3],
+							 [0.4952497167, 1],
+							 [0.5221334604, 0],
+							 [0.5180496773, 0],
+							 [0.4102282515, 1],
+							 [0.3695546213, 0],
+							 [0.5795347078, 1],
+							 [0.5759197324, 6],
+							 [0.6060748739, 1],
+							 [0.295614492, 3],
+							 [0.355676037, 0],
+							 [0.2815703229, 0],
+							 [0.3693832599, 0],
+							 [0.5999085505, 0],
+							 [0.4342801514, 3],
+							 [0.3857583724, 0],
+							 [0.2187148955, 1],
+							 [0.2739844144, 0],
+							 [0.3426889265, 0],
+							 [0.4353382308, 0],
+							 [0.3459211427, 0],
+							 [0.4831142047, 0],
+							 [0.246281156, 1],
+							 [0.2082950645, 0],
+							 [0.294199016, 0],
+							 [0.256976147, 3],
+							 [0.5408063171, 2],
+							 [0.3328563176, 1],
+							 [0.5140888141, 2],
+							 [0.3042756217, 1],
+							 [0.3946210511, 1],
+							 [0.4796571924, 2],
+							 [0.2562048014, 0],
+							 [0.3747645951, 2],
+							 [0.2164153095, 0],
+							 [0.2485087861, 0]],
+				      type: 'scatter',
+					  itemStyle: {color: '#a83f38'},
+				    }
+				  ]
+				};
+				
+				educationChart.setOption(eduoption);
+				
+				//field of study data
+				var s3 = {
+				  tooltip: {
+				    trigger: 'axis',
+				    axisPointer: {
+				      // Use axis to trigger tooltip
+				      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+				    }
+				  },
+				  title: {
+				  		subtext: 'Bar Chart of Number of People Study in Field of Health in Each Area',
+				  		left: '5%',
+				  		top: '1%'
+				  		  },
+				  legend: {
+					  right: '10%',
+					  top: '3%'},
+				  grid: {
+				    left: '15%',
+				    top: '15%'
+				  },
+				  xAxis: {
+					name: 'Number of People',
+					nameLocation: 'center',
+					nameGap: 30,
+				    type: 'value'
+				  },
+				  yAxis: {
+				    type: 'category',
+				    data: ['Brunswick - Coburg', 'Darebin - South', 'Essendon', 'Melbourne City', 'Port Phillip', 'Yarra', 'Boroondara', 'Manningham - West', 'Stonnington - West', 'Whitehorse - West', 'Bayside', 'Darebin - North', 'Nillumbik - Kinglake', 'Whittlesea - Wallan', 'Keilor', 'Macedon Ranges', 'Glen Eira', 'Kingston', 'Stonnington - East', 'Banyule', 'Moreland - North', 'Sunbury', 'Tullamarine - Broadmeadows', 'Knox', 'Manningham - East', 'Maroondah', 'Whitehorse - East', 'Yarra Ranges', 'Cardinia', 'Casey - North', 'Casey - South', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton - Bacchus Marsh', 'Wyndham', 'Frankston', 'Mornington Peninsula']
+				  },
+				  series: [
+				    {
+				      name: 'Health Field',
+				      type: 'bar',
+				      stack: 'total',
+				      label: {
+				        show: false
+				      },
+				      emphasis: {
+				        focus: 'series'
+				      },
+				      data: [4137, 2934, 3581, 6714, 5504, 5499, 12004, 4504, 4097, 5841, 5479, 3491, 3456, 7640, 2263, 1397, 7659, 5468, 2859, 7030, 2520, 1627, 4014, 6759, 1488, 5392, 3044, 6763, 3656, 4808, 5726, 5412, 7751, 4785, 3177, 3392, 4772, 7396, 5956, 8043]
+				    },
+				    {
+				      name: 'Other Field',
+				      type: 'bar',
+				      stack: 'total',
+				      label: {
+				        show: false
+				      },
+				      emphasis: {
+				        focus: 'series'
+				      },
+				      data: [45222, 27009, 33060, 100666, 61864, 52806, 83570, 41388, 38199, 48737, 46738, 42949, 29370, 82589, 24666, 12944, 73897, 53552, 21198, 56657, 32476, 16177, 57453, 67635, 11580, 48655, 27988, 63689, 37718, 52303, 64370, 70756, 83811, 68678, 37277, 40481, 59251, 92963, 57168, 66393]
+				    }
+				  ]
+				};
+				lastChart.setOption(s3)
+				
+				//education correlation
+				fieldoption = {
+				  xAxis: {
+					  name:"Proportion of Health Field for each Region",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+				  yAxis: {
+					  name:"Number of Postive",
+					  nameLocation:"middle",
+					  nameGap: 30
+					  },
+					tooltip: {formatter: '({b} {c})'},
+					title: {
+							subtext: 'Scatter Plot of Number of Positive Tweets vs. Proportion of People study in Field of Health in Each Area',
+							left: '5%',
+							top: '1%'
+									  },
+
+					grid: {
+							  left: '8%',
+							  top: '15%'
+							},
+				  series: [
+				    {
+				      symbolSize: 20,
+				      data: [[0.0838145019, 0],
+							 [0.0979861737, 0],
+							 [0.0977320488, 1],
+							 [0.06252561, 6],
+							 [0.0817005106, 3],
+							 [0.0943143813, 6],
+							 [0.1255990123, 1],
+							 [0.0981434673, 1],
+							 [0.0968649518, 1],
+							 [0.1070211441, 0],
+							 [0.104927514, 0],
+							 [0.0751722653, 1],
+							 [0.1052823981, 0],
+							 [0.084673442, 3],
+							 [0.0840357978, 0],
+							 [0.0974130116, 0],
+							 [0.0939109324, 2],
+							 [0.0926465605, 0],
+							 [0.1188427485, 0],
+							 [0.1103835948, 3],
+							 [0.0720082295, 0],
+							 [0.0913839587, 1],
+							 [0.0653033335, 0],
+							 [0.0908541011, 0],
+							 [0.113865932, 0],
+							 [0.0997650193, 0],
+							 [0.0980922918, 0],
+							 [0.0959944359, 1],
+							 [0.0883646735, 0],
+							 [0.0841869342, 0],
+							 [0.0816879708, 3],
+							 [0.0710534608, 1],
+							 [0.084653022, 2],
+							 [0.0651348298, 1],
+							 [0.0785336432, 1],
+							 [0.0773140656, 2],
+							 [0.0745357137, 0],
+							 [0.0736954334, 2],
+							 [0.09435397, 0],
+							 [0.1080525552, 0]],
+				      type: 'scatter',
+					  itemStyle: {color: '#a83f38'},
+				    }
+				  ]
+				};
+				
+				fieldChart.setOption(fieldoption);
+				
+			</script>
+			<br />
+			<br />
+			
+	</body>
+
+
+</html>

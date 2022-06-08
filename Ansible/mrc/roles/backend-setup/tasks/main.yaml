@@ -1,0 +1,99 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+# Clone project repository from Github
+- name: Clone project repository from Github
+  become: yes
+  git:
+    repo: "https://github.com/keyi20/ccc-project2.git"
+    dest: /home/ubuntu/
+  
+
+# Set Access-Control-Allow-Origin for couchdb
+- name: Set Access-Control-Allow-Origin enability
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_node/couchdb@{{groups['COMP90024'][0]}}/_config/httpd/enable_cors
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: PUT
+    force_basic_auth: yes
+    status_code: 200,201
+    body: '"true"'
+  
+- name: Set Access-Control-Allow-Origin types
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_node/couchdb@{{groups['COMP90024'][0]}}/_config/cors/origins
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: PUT
+    force_basic_auth: yes
+    status_code: 200,201
+    body: '"*"'
+
+- name: Set Access-Control-Allow-Origin methods
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_node/couchdb@{{groups['COMP90024'][0]}}/_config/cors/methods
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: PUT
+    force_basic_auth: yes
+    status_code: 200,201
+    body: '"GET, PUT, POST, HEAD, DELETE"'
+  
+
+
+# # Create and load melb geojson 
+# - name: Create melb geojson database
+#   uri:
+#     url: http://{{groups['COMP90024'][0]}}:5984/melb_geo
+#     user: "{{ user }}"
+#     password: "{{ pass }}"
+#     method: PUT
+#     force_basic_auth: yes
+#     status_code: 200,201
+    
+# - name: Load melb geojson data
+#   uri:
+#     url: http://{{groups['COMP90024'][0]}}:5984/melb_geo/_bulk_docs
+#     user: "{{ user }}"
+#     password: "{{ pass }}"
+#     method: POST
+#     force_basic_auth: yes
+#     status_code: 200,201
+#     headers:
+#       Content-Type: "application/json"
+#     body: @./~/ccc-project2/Couchdb/melbourne_division.geojson
+#     body_format: json
+
+
+- name: Install dependencies
+  become: yes
+  ansible.builtin.pip:
+    name: ['couchdb', 'tweepy', 'textblob', 'emoji']
+    state: latest
+
+
+- name: adding recent twitter data (requesting about 5000 tweets...wait...)
+  become: yes
+  shell: |
+      chdir=/home/ubuntu/ccc-project2/Twitter_API/search/
+      ./recent_search.sh
+      
+      
+
+# Compile and push views to couchdb
+- name: Compile and push views to couchdb
+  become: yes
+  command: |
+      chdir=/home/ubuntu/ccc-project2/Couchdb/
+      sudo npm install grunt --save-dev
+      sudo npm install grunt-couch --save-dev
+      grunt couch-compile
+      grunt couch-push
+
+

@@ -1,0 +1,957 @@
+{
+    "docs":
+    [
+        {
+            "id": 494678742929641472,
+            "text": "Getting my dose of Pho at Thuan_an in Sunshine #Vietnamese http://t.co/L19gSpb1sf",
+            "coordinates": "[144.8302451, -37.7865679]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20601",
+            "SA3_NAME16": "Brunswick - Coburg"
+        },
+        {
+            "id": 494980081765199872,
+            "text": "Cannot wait until the 12th of August #WWENetwork @WWE overdose here I come!",
+            "coordinates": "[144.96011956, -37.76677477]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20602",
+            "SA3_NAME16": "Darebin - South"
+        },
+        {
+            "id": 496621732610846720,
+            "text": "If you suffer from any of these ailments, consider #Cannabis. It's one of the few drugs you can't overdose on. http://t.co/33uJQdMsMp",
+            "coordinates": "[145.0876725, -37.7188226]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20602",
+            "SA3_NAME16": "Darebin - South"
+        },
+        {
+            "id": 496835516608684033,
+            "text": "Daily dose of chai latte omg I'm so pretentious. @ T-Square Club http://t.co/cpVBNxN3py",
+            "coordinates": "[144.96225012, -37.80649939]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20602",
+            "SA3_NAME16": "Darebin - South"
+        },
+        {
+            "id": 496907091324325888,
+            "text": "se eu sobreviver a essa dose de dramin eu conto p vcs",
+            "coordinates": "[144.92657264, -37.74544787]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20602",
+            "SA3_NAME16": "Darebin - South"
+        },
+        {
+            "id": 497860354219573249,
+            "text": "Y'day lunch highly dosed with Italian carbs 😜 w drewliow in Tiamo Lygon Streer, #melbourne… http://t.co/kCHgGyGuKv",
+            "coordinates": "[144.96737705, -37.7982774]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20602",
+            "SA3_NAME16": "Darebin - South"
+        },
+        {
+            "id": 497895183732985857,
+            "text": "Enjoying a lazy weekend? Top it off with a REAL dose of HELADO!!!\n#heladosjauja #jauja #itstheweekend… http://t.co/PRM8bmNpqp",
+            "coordinates": "[144.96688965, -37.80118612]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20603",
+            "SA3_NAME16": "Essendon"
+        },
+        {
+            "id": 497955184153079808,
+            "text": "@jordsgomez I will overdose on cold and flu tablets",
+            "coordinates": "[144.73606679, -37.56275611]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20603",
+            "SA3_NAME16": "Essendon"
+        },
+        {
+            "id": 502371915692908544,
+            "text": "Doctors Jamaica and Kasey providing guests with their doses of sugar (jelly beans and M&amp;Ms).… http://t.co/rq8bjtpoDi",
+            "coordinates": "[144.9683261, -37.82383049]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20603",
+            "SA3_NAME16": "Essendon"
+        },
+        {
+            "id": 502437966229159936,
+            "text": "@vaccinespunkey same here. There was always Luke... But never Lucas.",
+            "coordinates": "[144.73919783, -37.64969131]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 502601914597777409,
+            "text": "@RNLifeMatters \"Everything's a poison, all that matters is the dose\" - @DoctorKarl",
+            "coordinates": "[145.16059097, -37.90870984]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 502650096568516608,
+            "text": "Don't dawdle, dose it bro",
+            "coordinates": "[144.9617206, -37.8079968]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 502698874058731520,
+            "text": "@halfwrittentale I like to follow it with a hefty dose of Mint Car",
+            "coordinates": "[145.1489164, -37.98688542]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 504421493850120192,
+            "text": "@lethaldosexxx @theunderdoug @Coffinsyrup69 @JEANSANDJOGGERS yeah I said that, yeah I stand by it, this convo should happen off twitter",
+            "coordinates": "[144.99751872, -37.80298866]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 504947956340891648,
+            "text": "On a Ryan gosling rampage, tonight's dose is the notebook :--)",
+            "coordinates": "[145.06249423, -37.81615776]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 505125868406980608,
+            "text": "@CNN # the in middle is trying to push Obama into which he dose not like but is matter of can help as the world is looking at him",
+            "coordinates": "[145.23669426, -37.8093406]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 505185972552605696,
+            "text": "Beat of the heart at #overdose day EMR remembrance event at Ringwood Lake http://t.co/8ELkVZHBDh",
+            "coordinates": "[145.233773, -37.809476]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 506055977750130688,
+            "text": "Chemical vapours, heavy/precious metals and a decent dose of romance... Dan Carrillo's daguerreotype process is 👌💞http://t.co/y4jVqpH5Rb",
+            "coordinates": "[144.98082422, -37.79057344]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 507100610907222016,
+            "text": "@nancycato1 @mo22 It's the milk of human kindness. I need a dose. Happy Grand parenting 😊 x",
+            "coordinates": "[145.01880378, -37.87063949]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 507709290015367169,
+            "text": "It's Ayomo time all the time \n#dailydose @ Ayomo Frozen Yogurt http://t.co/9JqvNXrR4w",
+            "coordinates": "[144.95987111, -37.8314439]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 507734569727324160,
+            "text": "getting a dose of spring sunshine + coffee at the office @ The League 2.0 http://t.co/D0GFiVdht4",
+            "coordinates": "[144.97741766, -37.79896867]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 507809711517736960,
+            "text": "Pancakes overdose http://t.co/X5xCpHrYF3",
+            "coordinates": "[145.09353064, -37.8828303]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 508059767722356737,
+            "text": "someone help i think i'm going to overdose on skittles",
+            "coordinates": "[145.09837579, -37.60926237]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 508066599744462848,
+            "text": "Lisa Weterings speaking on #radiation doses from chest #x-ray comparing digital and computed radiograpgy #2014CSM_Melb @AIRadiography",
+            "coordinates": "[144.952548, -37.8240434]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 508068748327018497,
+            "text": "Lisa Weterings places, of those tested, integrated digital radiography first in performance and lowest in dose at #2014CSM_Melb",
+            "coordinates": "[144.9527829, -37.8243479]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 508537837382156288,
+            "text": "Dr Donald McLean of @ACTHealth showing use of #medphys to reduce skin dose in fluoro #CT http://t.co/vRAb71krsX at @2014CSM #2014CSM_Melb",
+            "coordinates": "[144.8480658, -37.6643007]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509016608811925504,
+            "text": "@Sk_aldosery الدوام حلو",
+            "coordinates": "[144.89875204, -37.79834374]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509017587548565504,
+            "text": "@Sk_aldosery كل شي حلو اهم شي الزحمه 😜بعدين بس انتو تبلشون انا اخلص ✌️✌️.",
+            "coordinates": "[144.89858756, -37.79818732]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509191463884701696,
+            "text": "@NASA_EO ur particle escalation glider I would love to see what it dose in space",
+            "coordinates": "[145.14233653, -37.91878933]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509226133712162816,
+            "text": "@NASA_EO light dose too",
+            "coordinates": "[145.14236443, -37.91877336]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509517113187254272,
+            "text": "Dear my dearest and beloved opa dosen ... Saia mengantuk sangat. Bolehkan kuliahnya dipersingkat… (at @unimelb) — https://t.co/zhxLQgZnhJ",
+            "coordinates": "[144.96193, -37.80243]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 509560418373615617,
+            "text": "Nahhh las noticias de aqui \"Muere hombre bañandose en la playa, lo mato un tiburón\"",
+            "coordinates": "[145.0492907, -37.721172]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 513873505717202945,
+            "text": "Andrea St, #StAlbans. Incident, initiated. Timeline: http://t.co/M0l2O4n7qB http://t.co/IVofovaxnm",
+            "coordinates": "[144.79853821, -37.74979401]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 514995716125503490,
+            "text": "Jajaja ya ustedes se pasan con el tema de Maluma. El chino haciendo billete en forma y ustedes ahi... en twitter dandoselas de malotes jajaj",
+            "coordinates": "[144.9816622, -37.8723529]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20604",
+            "SA3_NAME16": "Melbourne City"
+        },
+        {
+            "id": 516817602648109057,
+            "text": "@MerlyAclin welcome to jungle bu dosen 😜😝😝😝",
+            "coordinates": "[145.06160688, -37.75724431]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 516819565800464385,
+            "text": "@MerlyAclin eaaa!! Mantp mantp... Beta percaya ibu dosen kece yg 1 ini pasti bisa la.. Semangka 😉😉😄😄",
+            "coordinates": "[145.05966517, -37.77286825]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 517618810031841280,
+            "text": "@TheRedTsar according to yours you think management dosent happen midweek.. Ofcourse he works on our defence its the players who have to",
+            "coordinates": "[145.05068606, -37.65009794]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 518271281276280832,
+            "text": "@_Austin_17 @NepentheZ theres no point in continue arguing if hes ignorant and dosent understand what im saying",
+            "coordinates": "[145.05081228, -37.65003636]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 518639612210601985,
+            "text": "I have been without my dose of #dailywisdom today....not good http://t.co/2FhFrB6dPI",
+            "coordinates": "[145.2060539, -38.0808178]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 519369701638426624,
+            "text": "@vickyvriesen nah just given her a couple of doses of panadol see how that goes. She has been ok this afternoon",
+            "coordinates": "[145.2060302, -38.0807891]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 519396606903214080,
+            "text": "@thomasbrook4 @kiaa_cheer bloody heck corvax",
+            "coordinates": "[145.31657327, -37.75081394]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 519742025499820032,
+            "text": "I'm sitting in epworth hospital because of different sized pupils.. Earlier this year I was receiving a rabies vaccine for a monkey scratch.",
+            "coordinates": "[144.99292453, -37.81641189]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20605",
+            "SA3_NAME16": "Port Phillip"
+        },
+        {
+            "id": 520238525686374401,
+            "text": "Burdakı və Azərbaycandakı maashlari , ish vaxtlarını müqayisə edəndə , necə də istismarçı bir dövlətdə , cəmiyyətdə yaşadığımızı anlayıram..",
+            "coordinates": "[144.970948, -37.8095404]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20606",
+            "SA3_NAME16": "Stonnington - West"
+        },
+        {
+            "id": 520332770342473728,
+            "text": "@DarrenRistevski what you talking about man, if he dosent want too be a part of what were building GO. Regardless if it's Griff or ANY1!!",
+            "coordinates": "[144.83137539, -37.76976423]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20606",
+            "SA3_NAME16": "Stonnington - West"
+        },
+        {
+            "id": 522214715259252736,
+            "text": "Getting my fortnightly dose of K-Pop, kimchi and Beef Bulgogi!!! I love seeing this place busy!!! I &lt;3 Charm Noodle | #Hawthorn #Hyperlocal",
+            "coordinates": "[145.03718313, -37.82278825]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20606",
+            "SA3_NAME16": "Stonnington - West"
+        },
+        {
+            "id": 522314834243645440,
+            "text": "@bron_two The oils thing is someone else, but he's anti-vax and crazy enough. @ColourpurpleGal",
+            "coordinates": "[145.10010725, -37.61868856]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20606",
+            "SA3_NAME16": "Stonnington - West"
+        },
+        {
+            "id": 522348243393323008,
+            "text": "@KaneWatto @westernbulldogs clearly @Robbo_heraldsun dosent agree",
+            "coordinates": "[145.05082853, -37.65003552]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 522529862725013504,
+            "text": "@nickimjfam @RihIconicslay @Lostat420 theres a difference between being loyal nd hanging around to leech ..he dosent see it that way tho",
+            "coordinates": "[144.7672419, -37.8635571]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 522794142833733634,
+            "text": "Mən də vaxtilə ADA uşağı olmuşam. Və tələbə kartımı özümlə bura kimi gətirmişəm. ADA qəlblərdə &lt;3",
+            "coordinates": "[144.970947, -37.8095365]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 523339575171641345,
+            "text": "Bizarre beauty contests http://t.co/gvax0GEN0z via @MofRIT",
+            "coordinates": "[144.952456, -37.816239]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 526687862498922496,
+            "text": "Why dose the Muslim religion want to kill ever one who dose not believe in 1 mans ideology #qanda",
+            "coordinates": "[145.29057384, -38.10097507]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 527171095208538112,
+            "text": "Alien City - Information Overdose (s/t lp-1979): http://t.co/SmSZNEzu6v @courtney winX&amp;bLinX",
+            "coordinates": "[144.9977441, -37.8472387]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 527201637983469569,
+            "text": "Happy birthday to Jonas Salk, creator of the polio vaccine a true hero and absolutely selfless for humankind http://t.co/vq9hFxT79t",
+            "coordinates": "[145.25040415, -38.14212615]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 527201959950819328,
+            "text": "Happy birthday to the late Jonas Salk, creator of the polio vaccine a true hero and absolutely selfless for humankind http://t.co/0PiLP2DwMW",
+            "coordinates": "[145.25352419, -38.14372]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 527227898692763648,
+            "text": "@jadegrrrl Neither do I, tap water refills are great, builds up your immune system as well, like vaccines. #bottledwater",
+            "coordinates": "[145.2381634, -37.8923942]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20607",
+            "SA3_NAME16": "Yarra"
+        },
+        {
+            "id": 533244545039728640,
+            "text": "@1DTourLife dont die of perfect over dose if you meet him ok",
+            "coordinates": "[145.0479265, -37.913755]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20701",
+            "SA3_NAME16": "Boroondara"
+        },
+        {
+            "id": 533641649918722050,
+            "text": "Let's live natural—eat Paleo, not vaccinate, and use solely homeopathy and Chinese medicine so we can die at 40.",
+            "coordinates": "[144.99008867, -37.86921756]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20701",
+            "SA3_NAME16": "Boroondara"
+        },
+        {
+            "id": 534481602441531394,
+            "text": "Doing public hosp locum what's best go to for drug doses, MHA for Qld @DrKAlSaee @VeroniqueBrowne ? I still use psychotropic g'lines!",
+            "coordinates": "[145.0105699, -37.81392]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20702",
+            "SA3_NAME16": "Manningham - West"
+        },
+        {
+            "id": 536509266023043072,
+            "text": "Yeah yeha like for chat then dosent chat  DERP",
+            "coordinates": "[145.05088784, -37.64978539]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20702",
+            "SA3_NAME16": "Manningham - West"
+        },
+        {
+            "id": 536803118517063680,
+            "text": "First successful day of #funemployment down. #doubledose of @yoga_213 &amp; chilling with my fave guy.… http://t.co/l3wVz8bJEy",
+            "coordinates": "[144.99571367, -37.84317111]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20703",
+            "SA3_NAME16": "Whitehorse - West"
+        },
+        {
+            "id": 537729160282505216,
+            "text": "Bubonic plague is back.  I'll be alright, I was vaccinated in China.  http://t.co/aDh1lr5CP4",
+            "coordinates": "[144.98338272, -37.81620515]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20802",
+            "SA3_NAME16": "Glen Eira"
+        },
+        {
+            "id": 538657845852385281,
+            "text": "@AugustusBrown A liberal dose of butter on crumpets is great",
+            "coordinates": "[145.0023999, -37.85314935]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20802",
+            "SA3_NAME16": "Glen Eira"
+        },
+        {
+            "id": 541099790184902656,
+            "text": "Thx4 RT! @LittleMelbourne: daily dose on what's fun to do, see, visit, eat, play, create &amp; explore with babies, toddlers &amp; kids: #Melbourne",
+            "coordinates": "[145.19153852, -37.75154735]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20802",
+            "SA3_NAME16": "Glen Eira"
+        },
+        {
+            "id": 541699319644946433,
+            "text": "@3AW693 -next we will see a parent/s crying on TV because their darling daughter has overdosed, and we \"must stop drugs\"- no sympathy here!",
+            "coordinates": "[144.82398934, -37.79088456]",
+            "sentiments": "negative",
+            "SA3_CODE16": "20802",
+            "SA3_NAME16": "Glen Eira"
+        },
+        {
+            "id": 542175729933246464,
+            "text": "Todas odian la champeta hasta que tienen al negro de 2 con 20 detrás untandosela. Ja !",
+            "coordinates": "[145.1067694, -37.8476117]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20804",
+            "SA3_NAME16": "Stonnington - East"
+        },
+        {
+            "id": 543185604834385921,
+            "text": "@TedMulder1 Taken a severe overdose of fuckwit this morning , can you get that stuff over the counter ?",
+            "coordinates": "[145.21808903, -37.82458232]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 545163906138648576,
+            "text": "@matwhi The books are so much better though. How about The Messenger (Markus Zusak) or Burial Rites (Hannah Kent). A dose of Aust fiction",
+            "coordinates": "[144.97811542, -37.78378576]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 546873878933278721,
+            "text": "@thats0jack Australia dosent have school till feb 😂",
+            "coordinates": "[145.07912476, -37.70948084]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 547689166750773248,
+            "text": "Les australiens découvrent ENFIN dubsmach = double dose sur fb 😭",
+            "coordinates": "[145.16718748, -37.7798399]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 547708921964531712,
+            "text": "@Fereeha they all are ready to treat terrorism by high dose rather curing it for long term by giving justice, rights and identity.",
+            "coordinates": "[144.86117329, -37.68183314]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 548001246292873216,
+            "text": "Okay I've overdosed on pavola...",
+            "coordinates": "[145.0393858, -37.6430042]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20901",
+            "SA3_NAME16": "Banyule"
+        },
+        {
+            "id": 551328426582233088,
+            "text": "Hey every one dose some one know what the time is in new york",
+            "coordinates": "[144.6745784, -37.911636]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20902",
+            "SA3_NAME16": "Darebin - North"
+        },
+        {
+            "id": 554134984437407744,
+            "text": "Alright Australia I've had a good dose of you for now. See you in May! Thanks to this bunch of… http://t.co/J00vj8awnV",
+            "coordinates": "[144.84960744, -37.67027323]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 554813480851611648,
+            "text": "@drdavidagrimes ...and thus 5 were vaccinated, confirming vaccine doesn't guarantee immunity.",
+            "coordinates": "[144.88845889, -37.77179334]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 555108569696071683,
+            "text": "@anchislasky Otro perfil falso del UCD haciéndose pasar por Judio propagando el odio. No le da vergüenza? ...obvio que no.",
+            "coordinates": "[144.9927031, -37.8583018]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 555502747387064320,
+            "text": "Let the coffee overdose begin.",
+            "coordinates": "[144.9883406, -37.8281649]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 556646562529415170,
+            "text": "Mörk &amp; @rooftopbees with a dose of rum!!! Chocolate festival just got boozy! Immigration Museum Melbourne http://t.co/Qf9qeY7Iny",
+            "coordinates": "[144.96058615, -37.81933188]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 556656417587736576,
+            "text": "Why would healthcare workers NOT get vaccinated?! “@bbchealth: 'Give flu jab to popular med students' http://t.co/g4LWKvHUHm”",
+            "coordinates": "[145.01838007, -37.77672511]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 557075833668386816,
+            "text": "@J_C_Campbell @SincDavidson @JoshFrydenberg this govt seems intent on pissing off its best friends - maybe needs a dose of 1993",
+            "coordinates": "[144.91653442, -37.77452144]",
+            "sentiments": "positive",
+            "SA3_CODE16": "20904",
+            "SA3_NAME16": "Whittlesea - Wallan"
+        },
+        {
+            "id": 557738214631690241,
+            "text": "Fresh greens, spiral zucchini and roasted sweet potatoes light cook up. Sometimes you just need a dose… http://t.co/taoRzCjf0j",
+            "coordinates": "[144.97639645, -37.86194101]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21004",
+            "SA3_NAME16": "Sunbury"
+        },
+        {
+            "id": 561303872161869826,
+            "text": "Should you vaccinate your child? This chart will help you decide. http://t.co/aNpX4HJeGi",
+            "coordinates": "[144.97856124, -37.8470042]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21004",
+            "SA3_NAME16": "Sunbury"
+        },
+        {
+            "id": 561702504925106176,
+            "text": "#antivax is now trending in #Melbourne http://t.co/fnPR2CvBiH",
+            "coordinates": "[144.963, -37.8143]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 561702506552918017,
+            "text": "#vaccineswork is now trending in #Melbourne http://t.co/X4NwPEbKQl",
+            "coordinates": "[144.963, -37.8143]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 562333827100450816,
+            "text": "I'm all for vaccines, but the rage against \"anti-vaxxers\" has moral panic written all over it.",
+            "coordinates": "[144.98673709, -37.77633062]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 562560514224427009,
+            "text": "#vaccineswork #vaccinations http://t.co/366RGLEaW8",
+            "coordinates": "[145.20889972, -37.99684427]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 562967019474386945,
+            "text": "@grraceatta 2.2g ba per scoop of assault. I think 2.5g is about the clinical dose. I always cycle off pwo supps so I don't build a tolerance",
+            "coordinates": "[144.9095844, -37.5779682]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 563632487704702976,
+            "text": "@MalWalden10 @MattThompson they knew rules,don't feel sorry for them- how many stories on heroin overdoses have done in your time mal?",
+            "coordinates": "[145.32832562, -37.79048136]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21005",
+            "SA3_NAME16": "Tullamarine - Broadmeadows"
+        },
+        {
+            "id": 565349240743149568,
+            "text": "#ProVaccination #AntiVaxxer Read this Mothers story: http://t.co/ZNk4XHHYfx #AntiVaccination  #vaccineswork #parents http://t.co/jOSRtVSvfG",
+            "coordinates": "[144.96971796, -37.80974287]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21101",
+            "SA3_NAME16": "Knox"
+        },
+        {
+            "id": 569352555622326272,
+            "text": "@Stamosislife @JPStamosFans yes well done, get my daily dose of gorgeousness from you guys.",
+            "coordinates": "[144.7250931, -37.71165202]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21102",
+            "SA3_NAME16": "Manningham - East"
+        },
+        {
+            "id": 569655634163052545,
+            "text": "Share like there is no tomorrow!!! \n\nThis Saturday it's time to bounce ideas with curious people at… http://t.co/fvWn0vaxPI",
+            "coordinates": "[144.95411652, -37.81712588]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21103",
+            "SA3_NAME16": "Maroondah"
+        },
+        {
+            "id": 570071872680775682,
+            "text": "@Optus y dose the bordband keep kicking me off",
+            "coordinates": "[145.32284383, -37.7989621]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21103",
+            "SA3_NAME16": "Maroondah"
+        },
+        {
+            "id": 571878395149086722,
+            "text": "Poetuiteros casándose... ¿Qué sigue? ¿Sextuiteras flacas y teniendo sexo?",
+            "coordinates": "[145.05076049, -37.8522111]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21103",
+            "SA3_NAME16": "Maroondah"
+        },
+        {
+            "id": 573222216839503873,
+            "text": "The term #gaycommunity is a bit outdated Considering the only people who hate us are ignorant. Im a person who dosent need 2 b labeled. #gay",
+            "coordinates": "[144.890943, -37.8318562]",
+            "sentiments": "negative",
+            "SA3_CODE16": "21105",
+            "SA3_NAME16": "Yarra Ranges"
+        },
+        {
+            "id": 573653339214233600,
+            "text": "First game of ranked on bo2 in 5 months and we get ddosed LOL",
+            "coordinates": "[145.25561781, -38.11800206]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21105",
+            "SA3_NAME16": "Yarra Ranges"
+        },
+        {
+            "id": 573760955173097472,
+            "text": "#NonStructureFire: Ventor Ct, Craigieburn. Initiated. 1 Appliance. Timeline: http://t.co/hODrtumXQ0 http://t.co/vaxQ4Z6OWb",
+            "coordinates": "[144.92900085, -37.60874557]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21105",
+            "SA3_NAME16": "Yarra Ranges"
+        },
+        {
+            "id": 573992141023633408,
+            "text": "Just watched Jimmy's vaccine message.. Best yet! You rock Jimmy!!  http://t.co/2W4Gq7FIWd @jimmykimmel @JimmyKimmelLive",
+            "coordinates": "[144.9810208, -37.86562653]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21203",
+            "SA3_NAME16": "Casey - South"
+        },
+        {
+            "id": 574026896817545216,
+            "text": "Waiting for our first dose of #coffee. @ Starbucks Australia https://t.co/4C018kgKuI",
+            "coordinates": "[144.96475736, -37.81798413]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21203",
+            "SA3_NAME16": "Casey - South"
+        },
+        {
+            "id": 574285880921206784,
+            "text": "Fifth Wesleyan Student Arrested In Club Drug Overdoses http://t.co/VfpWMCKhqa http://t.co/0brvZCKRGD",
+            "coordinates": "[144.86366272, -37.6745818]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21203",
+            "SA3_NAME16": "Casey - South"
+        },
+        {
+            "id": 575238381971619840,
+            "text": "Tuesday night dose of incredible, inspirational feminism and Anita Sarkeesian. #femfeq #thefword @… https://t.co/44e4EqwcDx",
+            "coordinates": "[144.96373761, -37.80919907]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21203",
+            "SA3_NAME16": "Casey - South"
+        },
+        {
+            "id": 630937251741061120,
+            "text": "When you can't drink at lunch, hot chocolate is the next best thing . Especially with a dose of mama… https://t.co/RpeA2eFWJQ",
+            "coordinates": "[144.9603119, -37.8312988]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21204",
+            "SA3_NAME16": "Dandenong"
+        },
+        {
+            "id": 631918610366115841,
+            "text": "Uds piensan que la gente colándose en TM es culpa de Petro? O la inseguridad?  O los trancones? \nNo entiendo qué esperan de sus dirigentes",
+            "coordinates": "[144.9800792, -37.7737942]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21204",
+            "SA3_NAME16": "Dandenong"
+        },
+        {
+            "id": 634175275367071744,
+            "text": "Because you can never have #enough #dose of the #blackgold! #morningwalk #coffeeplease… https://t.co/J30cGFW91R",
+            "coordinates": "[145.0209198, -37.8936996]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21204",
+            "SA3_NAME16": "Dandenong"
+        },
+        {
+            "id": 642256148716892160,
+            "text": "SEE one of Tones ancestors has been found in Sth Africa, only has a very small brain,😆 Sounds just like Tones, dosent it.!!😄 LOL !!!",
+            "coordinates": "[144.9078398, -37.7530715]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21205",
+            "SA3_NAME16": "Monash"
+        },
+        {
+            "id": 642509466034802688,
+            "text": "N stop playing with my dose I'm not leaving d country full stop.",
+            "coordinates": "[145.0603478, -37.6947256]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21205",
+            "SA3_NAME16": "Monash"
+        },
+        {
+            "id": 642517927422398464,
+            "text": "Stop fucking with my dose. Use had me in a induced come rapid detox up just go drop my dose while I was in hospital. Why???",
+            "coordinates": "[145.1028253, -37.704366]",
+            "sentiments": "negative",
+            "SA3_CODE16": "21205",
+            "SA3_NAME16": "Monash"
+        },
+        {
+            "id": 643691035529465856,
+            "text": "Reliving my Trinity days by getting my almost daily dose of Chai Latte… https://t.co/JM8fbhPiXa",
+            "coordinates": "[144.96151279, -37.79895678]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21205",
+            "SA3_NAME16": "Monash"
+        },
+        {
+            "id": 643989280470237184,
+            "text": "Thanks @ebgamesaus for the double dose of nostalgia.\n\nThe 20th anniversary PS4 controller and… https://t.co/ficJi7aObG",
+            "coordinates": "[144.96709169, -37.81586972]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21301",
+            "SA3_NAME16": "Brimbank"
+        },
+        {
+            "id": 646108180842344448,
+            "text": "#Rescue: Dandenong North. Going. Timeline: http://t.co/79kCQ4hNdU http://t.co/vax59WIsnV",
+            "coordinates": "[145.22480774, -37.96297073]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21301",
+            "SA3_NAME16": "Brimbank"
+        },
+        {
+            "id": 647621858582470658,
+            "text": "Very Excited. MSO Disney show. Hoping for a good dose of Menken. @ Melbourne Convention and… https://t.co/2SXjHZYeUH",
+            "coordinates": "[144.95312336, -37.82486976]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21301",
+            "SA3_NAME16": "Brimbank"
+        },
+        {
+            "id": 649866217004658688,
+            "text": "Call me what you like but a hypocrite I'm not. Flu vax FTW! #stopAVN #vaccineswork #vaxfax #vaccines… https://t.co/TMbQrMxDWq",
+            "coordinates": "[144.967, -37.8167]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21301",
+            "SA3_NAME16": "Brimbank"
+        },
+        {
+            "id": 652336750929428480,
+            "text": "#Incident: Albert St, Windsor. Safe. 1 Appliance. Timeline: http://t.co/YwrumPJiOD http://t.co/aSjMvaxcQA",
+            "coordinates": "[144.99125671, -37.85657883]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21302",
+            "SA3_NAME16": "Hobsons Bay"
+        },
+        {
+            "id": 675087349278199808,
+            "text": "Here's your weekly dose of Friday Feels. Interested in music, books, coffee, art, food, yoga (of… https://t.co/u2EBXGULPk",
+            "coordinates": "[144.95554388, -37.8157764]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21303",
+            "SA3_NAME16": "Maribyrnong"
+        },
+        {
+            "id": 677259612807032832,
+            "text": "dosen't like morn class much so decided go for afn instead",
+            "coordinates": "[144.9973035, -37.8835063]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21303",
+            "SA3_NAME16": "Maribyrnong"
+        },
+        {
+            "id": 681356432869076992,
+            "text": "63 tests between us and I didn't play any of them. Was a pleasure playing in the same team as… https://t.co/pvaxdRJ75a",
+            "coordinates": "[145.14793744, -37.77978236]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21303",
+            "SA3_NAME16": "Maribyrnong"
+        },
+        {
+            "id": 683393682712563712,
+            "text": "And there’s the anti vax video under pro vax news story again. Apparently it’s paid placement #StopAVN #Nojabnopay https://t.co/u6Ot92gLhN",
+            "coordinates": "[144.99870799, -37.77653946]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21304",
+            "SA3_NAME16": "Melton - Bacchus Marsh"
+        },
+        {
+            "id": 684590682145697792,
+            "text": "A much needed dose of coffee (@ Patricia Coffee Brewers - @pcoffeebrewers in Melbourne, VIC) https://t.co/TAN4DoqcnC",
+            "coordinates": "[144.95830446, -37.81470006]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21305",
+            "SA3_NAME16": "Wyndham"
+        },
+        {
+            "id": 687605542181720064,
+            "text": "#StopAVN She vilified parents grieving children lost to vaccine preventable disease HOWS THAT 4 RESPECTFUL UOW?  https://t.co/IBcf13CyeP",
+            "coordinates": "[144.99880205, -37.77655251]",
+            "sentiments": "positive",
+            "SA3_CODE16": "21305",
+            "SA3_NAME16": "Wyndham"
+        },
+        {
+            "id": 689213207752216576,
+            "text": "@FreeBeeCee @Cyclenut66 @uowresearch @UOW no. But needs to be backed by evidence. Not just c/p Google  searches from anti-vax websites",
+            "coordinates": "[144.99880621, -37.77661569]",
+            "sentiments": "neutral",
+            "SA3_CODE16": "21401",
+            "SA3_NAME16": "Frankston"
+        },
+        {
+            "id": 692664197545525248,
+            "text": "The world without vaccines was a cruel place https://t.co/7MvVCIwTeR via @smh #StopAVN #Nojabnopay",
+            "coordinates": "[144.99889693, -37.77660246]",
+            "sentiments": "negative",
+            "SA3_CODE16": "21401",
+            "SA3_NAME16": "Frankston"
+        }
+    ]
+}

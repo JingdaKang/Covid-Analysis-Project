@@ -1,0 +1,365 @@
+{
+    "docs":
+    [
+        {
+            "SA3_CODE16": 20601,
+            "SA3_NAME16": "Brunswick - Coburg",
+            "bachelor_and_above": 26901,
+            "bachelor_and_above_proportion": 0.5450069896,
+            " p_tot_tot": 49359,
+            " p_pguate_deg_tot": 7831,
+            " p_b_deg_tot": 19070
+        },
+        {
+            "SA3_CODE16": 20602,
+            "SA3_NAME16": "Darebin - South",
+            "bachelor_and_above": 16473,
+            "bachelor_and_above_proportion": 0.550145276,
+            " p_tot_tot": 29943,
+            " p_pguate_deg_tot": 4836,
+            " p_b_deg_tot": 11637
+        },
+        {
+            "SA3_CODE16": 20603,
+            "SA3_NAME16": "Essendon",
+            "bachelor_and_above": 18243,
+            "bachelor_and_above_proportion": 0.4978848831,
+            " p_tot_tot": 36641,
+            " p_pguate_deg_tot": 4766,
+            " p_b_deg_tot": 13477
+        },
+        {
+            "SA3_CODE16": 20604,
+            "SA3_NAME16": "Melbourne City",
+            "bachelor_and_above": 56789,
+            "bachelor_and_above_proportion": 0.5288601229,
+            " p_tot_tot": 107380,
+            " p_pguate_deg_tot": 16407,
+            " p_b_deg_tot": 40382
+        },
+        {
+            "SA3_CODE16": 20605,
+            "SA3_NAME16": "Port Phillip",
+            "bachelor_and_above": 34961,
+            "bachelor_and_above_proportion": 0.5189555872,
+            " p_tot_tot": 67368,
+            " p_pguate_deg_tot": 9686,
+            " p_b_deg_tot": 25275
+        },
+        {
+            "SA3_CODE16": 20702,
+            "SA3_NAME16": "Manningham - West",
+            "bachelor_and_above": 22728,
+            "bachelor_and_above_proportion": 0.4952497167,
+            " p_tot_tot": 45892,
+            " p_pguate_deg_tot": 5930,
+            " p_b_deg_tot": 16798
+        },
+        {
+            "SA3_CODE16": 20703,
+            "SA3_NAME16": "Whitehorse - West",
+            "bachelor_and_above": 28497,
+            "bachelor_and_above_proportion": 0.5221334604,
+            " p_tot_tot": 54578,
+            " p_pguate_deg_tot": 7999,
+            " p_b_deg_tot": 20498
+        },
+        {
+            "SA3_CODE16": 20801,
+            "SA3_NAME16": "Bayside",
+            "bachelor_and_above": 27051,
+            "bachelor_and_above_proportion": 0.5180496773,
+            " p_tot_tot": 52217,
+            " p_pguate_deg_tot": 6826,
+            " p_b_deg_tot": 20225
+        },
+        {
+            "SA3_CODE16": 20902,
+            "SA3_NAME16": "Darebin - North",
+            "bachelor_and_above": 19051,
+            "bachelor_and_above_proportion": 0.4102282515,
+            " p_tot_tot": 46440,
+            " p_pguate_deg_tot": 5213,
+            " p_b_deg_tot": 13838
+        },
+        {
+            "SA3_CODE16": 20903,
+            "SA3_NAME16": "Nillumbik - Kinglake",
+            "bachelor_and_above": 12131,
+            "bachelor_and_above_proportion": 0.3695546213,
+            " p_tot_tot": 32826,
+            " p_pguate_deg_tot": 2758,
+            " p_b_deg_tot": 9373
+        },
+        {
+            "SA3_CODE16": 20606,
+            "SA3_NAME16": "Stonnington - West",
+            "bachelor_and_above": 24512,
+            "bachelor_and_above_proportion": 0.5795347078,
+            " p_tot_tot": 42296,
+            " p_pguate_deg_tot": 6274,
+            " p_b_deg_tot": 18238
+        },
+        {
+            "SA3_CODE16": 20607,
+            "SA3_NAME16": "Yarra",
+            "bachelor_and_above": 33579,
+            "bachelor_and_above_proportion": 0.5759197324,
+            " p_tot_tot": 58305,
+            " p_pguate_deg_tot": 9609,
+            " p_b_deg_tot": 23970
+        },
+        {
+            "SA3_CODE16": 20701,
+            "SA3_NAME16": "Boroondara",
+            "bachelor_and_above": 57925,
+            "bachelor_and_above_proportion": 0.6060748739,
+            " p_tot_tot": 95574,
+            " p_pguate_deg_tot": 16696,
+            " p_b_deg_tot": 41229
+        },
+        {
+            "SA3_CODE16": 20904,
+            "SA3_NAME16": "Whittlesea - Wallan",
+            "bachelor_and_above": 26673,
+            "bachelor_and_above_proportion": 0.295614492,
+            " p_tot_tot": 90229,
+            " p_pguate_deg_tot": 6280,
+            " p_b_deg_tot": 20393
+        },
+        {
+            "SA3_CODE16": 21001,
+            "SA3_NAME16": "Keilor",
+            "bachelor_and_above": 9578,
+            "bachelor_and_above_proportion": 0.355676037,
+            " p_tot_tot": 26929,
+            " p_pguate_deg_tot": 1843,
+            " p_b_deg_tot": 7735
+        },
+        {
+            "SA3_CODE16": 21002,
+            "SA3_NAME16": "Macedon Ranges",
+            "bachelor_and_above": 4038,
+            "bachelor_and_above_proportion": 0.2815703229,
+            " p_tot_tot": 14341,
+            " p_pguate_deg_tot": 789,
+            " p_b_deg_tot": 3249
+        },
+        {
+            "SA3_CODE16": 20803,
+            "SA3_NAME16": "Kingston",
+            "bachelor_and_above": 21801,
+            "bachelor_and_above_proportion": 0.3693832599,
+            " p_tot_tot": 59020,
+            " p_pguate_deg_tot": 4872,
+            " p_b_deg_tot": 16929
+        },
+        {
+            "SA3_CODE16": 20804,
+            "SA3_NAME16": "Stonnington - East",
+            "bachelor_and_above": 14432,
+            "bachelor_and_above_proportion": 0.5999085505,
+            " p_tot_tot": 24057,
+            " p_pguate_deg_tot": 3940,
+            " p_b_deg_tot": 10492
+        },
+        {
+            "SA3_CODE16": 20901,
+            "SA3_NAME16": "Banyule",
+            "bachelor_and_above": 27658,
+            "bachelor_and_above_proportion": 0.4342801514,
+            " p_tot_tot": 63687,
+            " p_pguate_deg_tot": 7389,
+            " p_b_deg_tot": 20269
+        },
+        {
+            "SA3_CODE16": 21003,
+            "SA3_NAME16": "Moreland - North",
+            "bachelor_and_above": 13500,
+            "bachelor_and_above_proportion": 0.3857583724,
+            " p_tot_tot": 34996,
+            " p_pguate_deg_tot": 3616,
+            " p_b_deg_tot": 9884
+        },
+        {
+            "SA3_CODE16": 21004,
+            "SA3_NAME16": "Sunbury",
+            "bachelor_and_above": 3894,
+            "bachelor_and_above_proportion": 0.2187148955,
+            " p_tot_tot": 17804,
+            " p_pguate_deg_tot": 636,
+            " p_b_deg_tot": 3258
+        },
+        {
+            "SA3_CODE16": 21005,
+            "SA3_NAME16": "Tullamarine - Broadmeadows",
+            "bachelor_and_above": 16841,
+            "bachelor_and_above_proportion": 0.2739844144,
+            " p_tot_tot": 61467,
+            " p_pguate_deg_tot": 3910,
+            " p_b_deg_tot": 12931
+        },
+        {
+            "SA3_CODE16": 21101,
+            "SA3_NAME16": "Knox",
+            "bachelor_and_above": 25494,
+            "bachelor_and_above_proportion": 0.3426889265,
+            " p_tot_tot": 74394,
+            " p_pguate_deg_tot": 5688,
+            " p_b_deg_tot": 19806
+        },
+        {
+            "SA3_CODE16": 21102,
+            "SA3_NAME16": "Manningham - East",
+            "bachelor_and_above": 5689,
+            "bachelor_and_above_proportion": 0.4353382308,
+            " p_tot_tot": 13068,
+            " p_pguate_deg_tot": 1228,
+            " p_b_deg_tot": 4461
+        },
+        {
+            "SA3_CODE16": 21103,
+            "SA3_NAME16": "Maroondah",
+            "bachelor_and_above": 18696,
+            "bachelor_and_above_proportion": 0.3459211427,
+            " p_tot_tot": 54047,
+            " p_pguate_deg_tot": 4150,
+            " p_b_deg_tot": 14546
+        },
+        {
+            "SA3_CODE16": 21104,
+            "SA3_NAME16": "Whitehorse - East",
+            "bachelor_and_above": 14992,
+            "bachelor_and_above_proportion": 0.4831142047,
+            " p_tot_tot": 31032,
+            " p_pguate_deg_tot": 3987,
+            " p_b_deg_tot": 11005
+        },
+        {
+            "SA3_CODE16": 21105,
+            "SA3_NAME16": "Yarra Ranges",
+            "bachelor_and_above": 17351,
+            "bachelor_and_above_proportion": 0.246281156,
+            " p_tot_tot": 70452,
+            " p_pguate_deg_tot": 3245,
+            " p_b_deg_tot": 14106
+        },
+        {
+            "SA3_CODE16": 21201,
+            "SA3_NAME16": "Cardinia",
+            "bachelor_and_above": 8618,
+            "bachelor_and_above_proportion": 0.2082950645,
+            " p_tot_tot": 41374,
+            " p_pguate_deg_tot": 1603,
+            " p_b_deg_tot": 7015
+        },
+        {
+            "SA3_CODE16": 21202,
+            "SA3_NAME16": "Casey - North",
+            "bachelor_and_above": 16802,
+            "bachelor_and_above_proportion": 0.294199016,
+            " p_tot_tot": 57111,
+            " p_pguate_deg_tot": 3758,
+            " p_b_deg_tot": 13044
+        },
+        {
+            "SA3_CODE16": 21203,
+            "SA3_NAME16": "Casey - South",
+            "bachelor_and_above": 18013,
+            "bachelor_and_above_proportion": 0.256976147,
+            " p_tot_tot": 70096,
+            " p_pguate_deg_tot": 4153,
+            " p_b_deg_tot": 13860
+        },
+        {
+            "SA3_CODE16": 20802,
+            "SA3_NAME16": "Glen Eira",
+            "bachelor_and_above": 44106,
+            "bachelor_and_above_proportion": 0.5408063171,
+            " p_tot_tot": 81556,
+            " p_pguate_deg_tot": 11845,
+            " p_b_deg_tot": 32261
+        },
+        {
+            "SA3_CODE16": 21204,
+            "SA3_NAME16": "Dandenong",
+            "bachelor_and_above": 25353,
+            "bachelor_and_above_proportion": 0.3328563176,
+            " p_tot_tot": 76168,
+            " p_pguate_deg_tot": 6062,
+            " p_b_deg_tot": 19291
+        },
+        {
+            "SA3_CODE16": 21205,
+            "SA3_NAME16": "Monash",
+            "bachelor_and_above": 47071,
+            "bachelor_and_above_proportion": 0.5140888141,
+            " p_tot_tot": 91562,
+            " p_pguate_deg_tot": 14006,
+            " p_b_deg_tot": 33065
+        },
+        {
+            "SA3_CODE16": 21301,
+            "SA3_NAME16": "Brimbank",
+            "bachelor_and_above": 22353,
+            "bachelor_and_above_proportion": 0.3042756217,
+            " p_tot_tot": 73463,
+            " p_pguate_deg_tot": 4220,
+            " p_b_deg_tot": 18133
+        },
+        {
+            "SA3_CODE16": 21302,
+            "SA3_NAME16": "Hobsons Bay",
+            "bachelor_and_above": 15964,
+            "bachelor_and_above_proportion": 0.3946210511,
+            " p_tot_tot": 40454,
+            " p_pguate_deg_tot": 3923,
+            " p_b_deg_tot": 12041
+        },
+        {
+            "SA3_CODE16": 21303,
+            "SA3_NAME16": "Maribyrnong",
+            "bachelor_and_above": 21044,
+            "bachelor_and_above_proportion": 0.4796571924,
+            " p_tot_tot": 43873,
+            " p_pguate_deg_tot": 5520,
+            " p_b_deg_tot": 15524
+        },
+        {
+            "SA3_CODE16": 21304,
+            "SA3_NAME16": "Melton - Bacchus Marsh",
+            "bachelor_and_above": 16403,
+            "bachelor_and_above_proportion": 0.2562048014,
+            " p_tot_tot": 64023,
+            " p_pguate_deg_tot": 3209,
+            " p_b_deg_tot": 13194
+        },
+        {
+            "SA3_CODE16": 21305,
+            "SA3_NAME16": "Wyndham",
+            "bachelor_and_above": 37611,
+            "bachelor_and_above_proportion": 0.3747645951,
+            " p_tot_tot": 100359,
+            " p_pguate_deg_tot": 11860,
+            " p_b_deg_tot": 25751
+        },
+        {
+            "SA3_CODE16": 21401,
+            "SA3_NAME16": "Frankston",
+            "bachelor_and_above": 13661,
+            "bachelor_and_above_proportion": 0.2164153095,
+            " p_tot_tot": 63124,
+            " p_pguate_deg_tot": 2401,
+            " p_b_deg_tot": 11260
+        },
+        {
+            "SA3_CODE16": 21402,
+            "SA3_NAME16": "Mornington Peninsula",
+            "bachelor_and_above": 18498,
+            "bachelor_and_above_proportion": 0.2485087861,
+            " p_tot_tot": 74436,
+            " p_pguate_deg_tot": 3401,
+            " p_b_deg_tot": 15097
+        }
+    ]
+}

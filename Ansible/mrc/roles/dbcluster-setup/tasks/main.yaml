@@ -1,0 +1,47 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+# Add nodes to couchDB cluster
+- name: Enable couchDB cluster
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_cluster_setup
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: POST
+    force_basic_auth: yes
+    status_code: 200,201
+    headers:
+      Content-Type: "application/json"
+    body: "{\"action\": \"enable_cluster\", \"bind_address\": \"0.0.0.0\", \"username\": \"{{user}}\", \"password\":\"{{pass}}\", \"port\": \"5984\", \"remote_node\": \"{{inventory_hostname}}\", \"node_count\": \"4\", \"remote_current_user\": \"{{user}}\", \"remote_current_password\":\"{{pass}}\" }"
+    body_format: json
+
+- name: Add nodes to couchDB cluster
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_cluster_setup
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: POST
+    force_basic_auth: yes
+    status_code: 200,201
+    headers:
+      Content-Type: "application/json"
+    body: "{\"action\": \"add_node\", \"host\": \"{{ inventory_hostname }}\", \"port\": \"5984\", \"username\": \"{{user}}\", \"password\":\"{{pass}}\" }"
+    body_format: json
+
+- name: Finish the cluster setup
+  uri:
+    url: http://{{groups['COMP90024'][0]}}:5984/_cluster_setup
+    user: "{{ user }}"
+    password: "{{ pass }}"
+    method: POST
+    force_basic_auth: yes
+    status_code: 200,201
+    headers:
+      Content-Type: "application/json"
+    body: "{\"action\": \"finish_cluster\" }"
+    body_format: json

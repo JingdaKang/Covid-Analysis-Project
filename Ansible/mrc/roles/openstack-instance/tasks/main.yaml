@@ -1,0 +1,45 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+# Create instances on NeCTAR
+- name: Create instances
+  openstack.cloud.server:
+    name: '{{ item.name }}'
+    image: '{{ instance_image }}'
+    key_name: '{{ instance_key_name }}'
+    flavor: '{{ instance_flavor }}'
+    availability_zone: '{{ availability_zone }}'
+    security_groups: '{{ sg_names }}'
+    volumes: '{{ item.volumes }}'
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  loop: '{{ instances }}'
+  register: os_instance
+
+- name: Wait for connection
+  ansible.builtin.wait_for:
+    host: "{{ item.openstack.public_v4 }}"
+    port: 22
+    timeout: 120
+    search_regex: OpenSSH
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+# Add hosts to Ansible in-memory inventory
+- name: Add host
+  ansible.builtin.add_host:
+    name: '{{ item.openstack.public_v4 }}'
+    groups: COMP90024
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+- name: show groups
+  ansible.builtin.debug:
+    msg: "abc {{groups['COMP90024'][0]}} abc"

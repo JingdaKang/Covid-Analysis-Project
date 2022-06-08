@@ -1,0 +1,325 @@
+{
+    "docs":
+    [
+        {
+            "SA3_CODE16": 20601,
+            "SA3_NAME16": "Brunswick - Coburg",
+            "total_health_field": 4137,
+            "health_field_proportion": 0.0838145019,
+            " p_hlth_tot": 4137,
+            " p_tot_tot": 49359
+        },
+        {
+            "SA3_CODE16": 20602,
+            "SA3_NAME16": "Darebin - South",
+            "total_health_field": 2934,
+            "health_field_proportion": 0.0979861737,
+            " p_hlth_tot": 2934,
+            " p_tot_tot": 29943
+        },
+        {
+            "SA3_CODE16": 20603,
+            "SA3_NAME16": "Essendon",
+            "total_health_field": 3581,
+            "health_field_proportion": 0.0977320488,
+            " p_hlth_tot": 3581,
+            " p_tot_tot": 36641
+        },
+        {
+            "SA3_CODE16": 20604,
+            "SA3_NAME16": "Melbourne City",
+            "total_health_field": 6714,
+            "health_field_proportion": 0.06252561,
+            " p_hlth_tot": 6714,
+            " p_tot_tot": 107380
+        },
+        {
+            "SA3_CODE16": 20605,
+            "SA3_NAME16": "Port Phillip",
+            "total_health_field": 5504,
+            "health_field_proportion": 0.0817005106,
+            " p_hlth_tot": 5504,
+            " p_tot_tot": 67368
+        },
+        {
+            "SA3_CODE16": 20607,
+            "SA3_NAME16": "Yarra",
+            "total_health_field": 5499,
+            "health_field_proportion": 0.0943143813,
+            " p_hlth_tot": 5499,
+            " p_tot_tot": 58305
+        },
+        {
+            "SA3_CODE16": 20701,
+            "SA3_NAME16": "Boroondara",
+            "total_health_field": 12004,
+            "health_field_proportion": 0.1255990123,
+            " p_hlth_tot": 12004,
+            " p_tot_tot": 95574
+        },
+        {
+            "SA3_CODE16": 20702,
+            "SA3_NAME16": "Manningham - West",
+            "total_health_field": 4504,
+            "health_field_proportion": 0.0981434673,
+            " p_hlth_tot": 4504,
+            " p_tot_tot": 45892
+        },
+        {
+            "SA3_CODE16": 20606,
+            "SA3_NAME16": "Stonnington - West",
+            "total_health_field": 4097,
+            "health_field_proportion": 0.0968649518,
+            " p_hlth_tot": 4097,
+            " p_tot_tot": 42296
+        },
+        {
+            "SA3_CODE16": 20703,
+            "SA3_NAME16": "Whitehorse - West",
+            "total_health_field": 5841,
+            "health_field_proportion": 0.1070211441,
+            " p_hlth_tot": 5841,
+            " p_tot_tot": 54578
+        },
+        {
+            "SA3_CODE16": 20801,
+            "SA3_NAME16": "Bayside",
+            "total_health_field": 5479,
+            "health_field_proportion": 0.104927514,
+            " p_hlth_tot": 5479,
+            " p_tot_tot": 52217
+        },
+        {
+            "SA3_CODE16": 20902,
+            "SA3_NAME16": "Darebin - North",
+            "total_health_field": 3491,
+            "health_field_proportion": 0.0751722653,
+            " p_hlth_tot": 3491,
+            " p_tot_tot": 46440
+        },
+        {
+            "SA3_CODE16": 20903,
+            "SA3_NAME16": "Nillumbik - Kinglake",
+            "total_health_field": 3456,
+            "health_field_proportion": 0.1052823981,
+            " p_hlth_tot": 3456,
+            " p_tot_tot": 32826
+        },
+        {
+            "SA3_CODE16": 20904,
+            "SA3_NAME16": "Whittlesea - Wallan",
+            "total_health_field": 7640,
+            "health_field_proportion": 0.084673442,
+            " p_hlth_tot": 7640,
+            " p_tot_tot": 90229
+        },
+        {
+            "SA3_CODE16": 21001,
+            "SA3_NAME16": "Keilor",
+            "total_health_field": 2263,
+            "health_field_proportion": 0.0840357978,
+            " p_hlth_tot": 2263,
+            " p_tot_tot": 26929
+        },
+        {
+            "SA3_CODE16": 21002,
+            "SA3_NAME16": "Macedon Ranges",
+            "total_health_field": 1397,
+            "health_field_proportion": 0.0974130116,
+            " p_hlth_tot": 1397,
+            " p_tot_tot": 14341
+        },
+        {
+            "SA3_CODE16": 20802,
+            "SA3_NAME16": "Glen Eira",
+            "total_health_field": 7659,
+            "health_field_proportion": 0.0939109324,
+            " p_hlth_tot": 7659,
+            " p_tot_tot": 81556
+        },
+        {
+            "SA3_CODE16": 20803,
+            "SA3_NAME16": "Kingston",
+            "total_health_field": 5468,
+            "health_field_proportion": 0.0926465605,
+            " p_hlth_tot": 5468,
+            " p_tot_tot": 59020
+        },
+        {
+            "SA3_CODE16": 20804,
+            "SA3_NAME16": "Stonnington - East",
+            "total_health_field": 2859,
+            "health_field_proportion": 0.1188427485,
+            " p_hlth_tot": 2859,
+            " p_tot_tot": 24057
+        },
+        {
+            "SA3_CODE16": 20901,
+            "SA3_NAME16": "Banyule",
+            "total_health_field": 7030,
+            "health_field_proportion": 0.1103835948,
+            " p_hlth_tot": 7030,
+            " p_tot_tot": 63687
+        },
+        {
+            "SA3_CODE16": 21003,
+            "SA3_NAME16": "Moreland - North",
+            "total_health_field": 2520,
+            "health_field_proportion": 0.0720082295,
+            " p_hlth_tot": 2520,
+            " p_tot_tot": 34996
+        },
+        {
+            "SA3_CODE16": 21004,
+            "SA3_NAME16": "Sunbury",
+            "total_health_field": 1627,
+            "health_field_proportion": 0.0913839587,
+            " p_hlth_tot": 1627,
+            " p_tot_tot": 17804
+        },
+        {
+            "SA3_CODE16": 21005,
+            "SA3_NAME16": "Tullamarine - Broadmeadows",
+            "total_health_field": 4014,
+            "health_field_proportion": 0.0653033335,
+            " p_hlth_tot": 4014,
+            " p_tot_tot": 61467
+        },
+        {
+            "SA3_CODE16": 21101,
+            "SA3_NAME16": "Knox",
+            "total_health_field": 6759,
+            "health_field_proportion": 0.0908541011,
+            " p_hlth_tot": 6759,
+            " p_tot_tot": 74394
+        },
+        {
+            "SA3_CODE16": 21102,
+            "SA3_NAME16": "Manningham - East",
+            "total_health_field": 1488,
+            "health_field_proportion": 0.113865932,
+            " p_hlth_tot": 1488,
+            " p_tot_tot": 13068
+        },
+        {
+            "SA3_CODE16": 21103,
+            "SA3_NAME16": "Maroondah",
+            "total_health_field": 5392,
+            "health_field_proportion": 0.0997650193,
+            " p_hlth_tot": 5392,
+            " p_tot_tot": 54047
+        },
+        {
+            "SA3_CODE16": 21104,
+            "SA3_NAME16": "Whitehorse - East",
+            "total_health_field": 3044,
+            "health_field_proportion": 0.0980922918,
+            " p_hlth_tot": 3044,
+            " p_tot_tot": 31032
+        },
+        {
+            "SA3_CODE16": 21105,
+            "SA3_NAME16": "Yarra Ranges",
+            "total_health_field": 6763,
+            "health_field_proportion": 0.0959944359,
+            " p_hlth_tot": 6763,
+            " p_tot_tot": 70452
+        },
+        {
+            "SA3_CODE16": 21201,
+            "SA3_NAME16": "Cardinia",
+            "total_health_field": 3656,
+            "health_field_proportion": 0.0883646735,
+            " p_hlth_tot": 3656,
+            " p_tot_tot": 41374
+        },
+        {
+            "SA3_CODE16": 21202,
+            "SA3_NAME16": "Casey - North",
+            "total_health_field": 4808,
+            "health_field_proportion": 0.0841869342,
+            " p_hlth_tot": 4808,
+            " p_tot_tot": 57111
+        },
+        {
+            "SA3_CODE16": 21203,
+            "SA3_NAME16": "Casey - South",
+            "total_health_field": 5726,
+            "health_field_proportion": 0.0816879708,
+            " p_hlth_tot": 5726,
+            " p_tot_tot": 70096
+        },
+        {
+            "SA3_CODE16": 21204,
+            "SA3_NAME16": "Dandenong",
+            "total_health_field": 5412,
+            "health_field_proportion": 0.0710534608,
+            " p_hlth_tot": 5412,
+            " p_tot_tot": 76168
+        },
+        {
+            "SA3_CODE16": 21205,
+            "SA3_NAME16": "Monash",
+            "total_health_field": 7751,
+            "health_field_proportion": 0.084653022,
+            " p_hlth_tot": 7751,
+            " p_tot_tot": 91562
+        },
+        {
+            "SA3_CODE16": 21301,
+            "SA3_NAME16": "Brimbank",
+            "total_health_field": 4785,
+            "health_field_proportion": 0.0651348298,
+            " p_hlth_tot": 4785,
+            " p_tot_tot": 73463
+        },
+        {
+            "SA3_CODE16": 21302,
+            "SA3_NAME16": "Hobsons Bay",
+            "total_health_field": 3177,
+            "health_field_proportion": 0.0785336432,
+            " p_hlth_tot": 3177,
+            " p_tot_tot": 40454
+        },
+        {
+            "SA3_CODE16": 21303,
+            "SA3_NAME16": "Maribyrnong",
+            "total_health_field": 3392,
+            "health_field_proportion": 0.0773140656,
+            " p_hlth_tot": 3392,
+            " p_tot_tot": 43873
+        },
+        {
+            "SA3_CODE16": 21304,
+            "SA3_NAME16": "Melton - Bacchus Marsh",
+            "total_health_field": 4772,
+            "health_field_proportion": 0.0745357137,
+            " p_hlth_tot": 4772,
+            " p_tot_tot": 64023
+        },
+        {
+            "SA3_CODE16": 21305,
+            "SA3_NAME16": "Wyndham",
+            "total_health_field": 7396,
+            "health_field_proportion": 0.0736954334,
+            " p_hlth_tot": 7396,
+            " p_tot_tot": 100359
+        },
+        {
+            "SA3_CODE16": 21401,
+            "SA3_NAME16": "Frankston",
+            "total_health_field": 5956,
+            "health_field_proportion": 0.09435397,
+            " p_hlth_tot": 5956,
+            " p_tot_tot": 63124
+        },
+        {
+            "SA3_CODE16": 21402,
+            "SA3_NAME16": "Mornington Peninsula",
+            "total_health_field": 8043,
+            "health_field_proportion": 0.1080525552,
+            " p_hlth_tot": 8043,
+            " p_tot_tot": 74436
+        }
+    ]
+}

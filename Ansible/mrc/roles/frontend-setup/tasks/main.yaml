@@ -1,0 +1,20 @@
+# Author:
+# Zhibiao Xie 980357
+# Jingda Kang 1276802
+# Haoxian Cai 1074429
+# Zihan Xu 1198129
+# Keyi Zhang 1217718
+# Last updated: 2022-5-17
+
+# run the docker container to start frontend web service and keep adding streaming twitter data
+
+- name: run the httpd apache webserver 
+  become: yes
+  command: docker run -d -p 80:80 -v /home/ubuntu/ccc-project2/Web_server:/usr/local/apache2/htdocs --name Web_server httpd
+
+
+- name: adding streaming twitter data
+  become: yes
+  shell: |
+      chdir=/home/ubuntu/ccc-project2/Twitter_API/search/
+      ./streaming.sh

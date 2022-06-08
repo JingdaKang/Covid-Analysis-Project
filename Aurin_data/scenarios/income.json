@@ -1,0 +1,245 @@
+{
+    "docs":
+    [
+        {
+            "SA3_CODE16": 20601,
+            "SA3_NAME16": "Brunswick - Coburg",
+            "mean_aud": 65938.0,
+            " median_aud": 54129.0
+        },
+        {
+            "SA3_CODE16": 20602,
+            "SA3_NAME16": "Darebin - South",
+            "mean_aud": 75077.0,
+            " median_aud": 59045.0
+        },
+        {
+            "SA3_CODE16": 20603,
+            "SA3_NAME16": "Essendon",
+            "mean_aud": 77808.0,
+            " median_aud": 58488.0
+        },
+        {
+            "SA3_CODE16": 20604,
+            "SA3_NAME16": "Melbourne City",
+            "mean_aud": 69824.0,
+            " median_aud": 45815.0
+        },
+        {
+            "SA3_CODE16": 20605,
+            "SA3_NAME16": "Port Phillip",
+            "mean_aud": 90284.0,
+            " median_aud": 62326.0
+        },
+        {
+            "SA3_CODE16": 20903,
+            "SA3_NAME16": "Nillumbik - Kinglake",
+            "mean_aud": 71590.0,
+            " median_aud": 55094.0
+        },
+        {
+            "SA3_CODE16": 20904,
+            "SA3_NAME16": "Whittlesea - Wallan",
+            "mean_aud": 55316.0,
+            " median_aud": 48923.0
+        },
+        {
+            "SA3_CODE16": 21001,
+            "SA3_NAME16": "Keilor",
+            "mean_aud": 67170.0,
+            " median_aud": 54247.0
+        },
+        {
+            "SA3_CODE16": 21002,
+            "SA3_NAME16": "Macedon Ranges",
+            "mean_aud": 69445.0,
+            " median_aud": 54286.0
+        },
+        {
+            "SA3_CODE16": 20804,
+            "SA3_NAME16": "Stonnington - East",
+            "mean_aud": 106545.0,
+            " median_aud": 62713.0
+        },
+        {
+            "SA3_CODE16": 20901,
+            "SA3_NAME16": "Banyule",
+            "mean_aud": 70497.0,
+            " median_aud": 54519.0
+        },
+        {
+            "SA3_CODE16": 21003,
+            "SA3_NAME16": "Moreland - North",
+            "mean_aud": 57381.0,
+            " median_aud": 49212.0
+        },
+        {
+            "SA3_CODE16": 21004,
+            "SA3_NAME16": "Sunbury",
+            "mean_aud": 60820.0,
+            " median_aud": 53011.0
+        },
+        {
+            "SA3_CODE16": 21005,
+            "SA3_NAME16": "Tullamarine - Broadmeadows",
+            "mean_aud": 51928.0,
+            " median_aud": 45705.0
+        },
+        {
+            "SA3_CODE16": 21101,
+            "SA3_NAME16": "Knox",
+            "mean_aud": 58190.0,
+            " median_aud": 49538.0
+        },
+        {
+            "SA3_CODE16": 21102,
+            "SA3_NAME16": "Manningham - East",
+            "mean_aud": 79552.0,
+            " median_aud": 52509.0
+        },
+        {
+            "SA3_CODE16": 21103,
+            "SA3_NAME16": "Maroondah",
+            "mean_aud": 60544.0,
+            " median_aud": 50908.0
+        },
+        {
+            "SA3_CODE16": 21104,
+            "SA3_NAME16": "Whitehorse - East",
+            "mean_aud": 60476.0,
+            " median_aud": 48346.0
+        },
+        {
+            "SA3_CODE16": 21105,
+            "SA3_NAME16": "Yarra Ranges",
+            "mean_aud": 58866.0,
+            " median_aud": 49154.0
+        },
+        {
+            "SA3_CODE16": 21201,
+            "SA3_NAME16": "Cardinia",
+            "mean_aud": 57416.0,
+            " median_aud": 49988.0
+        },
+        {
+            "SA3_CODE16": 21202,
+            "SA3_NAME16": "Casey - North",
+            "mean_aud": 57760.0,
+            " median_aud": 48331.0
+        },
+        {
+            "SA3_CODE16": 21203,
+            "SA3_NAME16": "Casey - South",
+            "mean_aud": 54154.0,
+            " median_aud": 49171.0
+        },
+        {
+            "SA3_CODE16": 21204,
+            "SA3_NAME16": "Dandenong",
+            "mean_aud": 48207.0,
+            " median_aud": 42047.0
+        },
+        {
+            "SA3_CODE16": 21205,
+            "SA3_NAME16": "Monash",
+            "mean_aud": 59613.0,
+            " median_aud": 44846.0
+        },
+        {
+            "SA3_CODE16": 21301,
+            "SA3_NAME16": "Brimbank",
+            "mean_aud": 50192.0,
+            " median_aud": 44352.0
+        },
+        {
+            "SA3_CODE16": 21302,
+            "SA3_NAME16": "Hobsons Bay",
+            "mean_aud": 71787.0,
+            " median_aud": 57600.0
+        },
+        {
+            "SA3_CODE16": 21303,
+            "SA3_NAME16": "Maribyrnong",
+            "mean_aud": 63413.0,
+            " median_aud": 52337.0
+        },
+        {
+            "SA3_CODE16": 21304,
+            "SA3_NAME16": "Melton - Bacchus Marsh",
+            "mean_aud": 58261.0,
+            " median_aud": 51500.0
+        },
+        {
+            "SA3_CODE16": 21305,
+            "SA3_NAME16": "Wyndham",
+            "mean_aud": 57408.0,
+            " median_aud": 50077.0
+        },
+        {
+            "SA3_CODE16": 21401,
+            "SA3_NAME16": "Frankston",
+            "mean_aud": 57422.0,
+            " median_aud": 50037.0
+        },
+        {
+            "SA3_CODE16": 21402,
+            "SA3_NAME16": "Mornington Peninsula",
+            "mean_aud": 62300.0,
+            " median_aud": 45700.0
+        },
+        {
+            "SA3_CODE16": 20606,
+            "SA3_NAME16": "Stonnington - West",
+            "mean_aud": 110009.0,
+            " median_aud": 65300.0
+        },
+        {
+            "SA3_CODE16": 20607,
+            "SA3_NAME16": "Yarra",
+            "mean_aud": 83836.0,
+            " median_aud": 63460.0
+        },
+        {
+            "SA3_CODE16": 20701,
+            "SA3_NAME16": "Boroondara",
+            "mean_aud": 97432.0,
+            " median_aud": 58284.0
+        },
+        {
+            "SA3_CODE16": 20702,
+            "SA3_NAME16": "Manningham - West",
+            "mean_aud": 63001.0,
+            " median_aud": 44065.0
+        },
+        {
+            "SA3_CODE16": 20703,
+            "SA3_NAME16": "Whitehorse - West",
+            "mean_aud": 63245.0,
+            " median_aud": 44665.0
+        },
+        {
+            "SA3_CODE16": 20801,
+            "SA3_NAME16": "Bayside",
+            "mean_aud": 105625.0,
+            " median_aud": 61068.0
+        },
+        {
+            "SA3_CODE16": 20902,
+            "SA3_NAME16": "Darebin - North",
+            "mean_aud": 56255.0,
+            " median_aud": 47444.0
+        },
+        {
+            "SA3_CODE16": 20802,
+            "SA3_NAME16": "Glen Eira",
+            "mean_aud": 76186.0,
+            " median_aud": 55127.0
+        },
+        {
+            "SA3_CODE16": 20803,
+            "SA3_NAME16": "Kingston",
+            "mean_aud": 67571.0,
+            " median_aud": 54761.0
+        }
+    ]
+}
